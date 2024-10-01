@@ -55,7 +55,7 @@ thead, tfoot, tr:nth-child(even) { background: #eee }
 
 .first-box{
   width: 50%;
-  float: center;
+  float: left;
 }
 
 .first-box img{
