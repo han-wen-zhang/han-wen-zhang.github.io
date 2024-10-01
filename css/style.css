@@ -66,5 +66,4 @@ thead, tfoot, tr:nth-child(even) { background: #eee }
 .second-box{
   width:50%;
   float: left;
-  background-color: yellow;
 }
