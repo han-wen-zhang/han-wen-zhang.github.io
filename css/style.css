@@ -49,3 +49,22 @@ table {
 table thead th { border-bottom: 1px solid #ddd; }
 th, td { padding: 5px; }
 thead, tfoot, tr:nth-child(even) { background: #eee }
+
+
+
+
+.first-box{
+  width: 50%;
+  float: left;
+}
+
+.first-box img{
+  width: 100%;
+}
+
+
+.second-box{
+  width:50%;
+  float: left;
+  background-color: yellow;
+}
