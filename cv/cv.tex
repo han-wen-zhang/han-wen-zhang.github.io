@@ -1,0 +1,120 @@
+\documentclass[margin,line,pifont,palatino,courier]{res}
+
+\usepackage{pifont}
+\usepackage[latin1] {inputenc}
+\usepackage{hyperref}
+\usepackage{color}
+
+%\topmargin .5in
+%\oddsidemargin -.5in
+%\evensidemargin -.5in
+%\textwidth=6.0in
+ \textheight=9.0in
+%\itemsep=0in
+%\parsep=0in
+\usepackage{fancyhdr}
+%\topmargin=0in
+%\textheight=8.5in
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+\fancyhf{}
+%\cfoot{\thepage}
+%\lfoot{\textit{\footnotesize Research Statement}}
+%\rfoot{{\footnotesize Curriculum Vitae, Amanda Akin, \thepage}}
+
+
+\newenvironment{list1}{
+  \begin{list}{\ding{113}}{%
+      \setlength{\itemsep}{0in}
+      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in}
+      \setlength{\leftmargin}{0.17in}}}{\end{list}}
+\newenvironment{list2}{
+  \begin{list}{$\bullet$}{%
+      \setlength{\itemsep}{0in}
+      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in}
+      \setlength{\leftmargin}{0.2in}}}{\end{list}}
+
+\begin{document}
+
+\name{Hanwen Zhang \vspace*{.1in}}
+\title{HanwenZhang_CV}
+\begin{resume}
+
+\section{\sc Contact Information}
+
+\vspace{.05in}
+\begin{tabular}{@{}p{2.75in}p{2in}}
+Department of Applied  and &  \\
+Computational Mathematics & (203) 392-2522 \\
+Yale University &  
+\href{mailto:hanwen.zhang@yale.edu}
+{\texttt{hanwen.zhang@yale.edu}}\\
+12 Hillhouse Avenue, New Haven & 
+\href{https://han-wen-zhang.github.io/}
+{\texttt{https://han-wen-zhang.github.io}}\\
+ CT 06511, USA   & \\
+             
+\end{tabular}
+
+\section{\sc Research Interests}
+Numerical analysis, computational physics, PDE-constrained optimization
+
+\section{\sc Employment}
+Gibbs Assistant Professor, Yale University \hfill  07/2022-- \hspace*{1.12cm}\\
+Graduate Research Assistant, Yale University \hfill 09/2017--05/2022\\
+Optical Scientist, Facebook Reality Lab \hfill 06/2021--08/2021
+
+\section{\sc Education}
+Ph.D.\,, Applied Physics, Yale University\hfill 09/2017--05/2022\\
+B.Sc.\,, Physics, National University of Singapore\hfill 08/2012--05/2017\\
+B.Eng.\,, Material Science, National University of Singapore\hfill 08/2012--05/2017
+
+\section{\sc Publications}
+\begin{enumerate}
+\setlength\itemsep{0em}
+	\item{\textbf{H Zhang}. ``Constructing optimal Wannier functions via potential theory: isolated single band for matrix models." \href{https://arxiv.org/abs/2502.08641}{\color{blue} \emph{Preprint} (2025)}.}
+	\item{A. Gopal, \textbf{H Zhang}. ``A highly accurate procedure for computing globally optimal Wannier functions in one-dimensional crystalline insulators." \href{https://arxiv.org/abs/2409.04369}{\color{blue} \emph{Preprint} (2024)}.}
+	\item \textbf{H. Zhang}, V. Rokhlin. ``Finding roots of complex analytic functions via generalized colleague matrices." \href{https://link.springer.com/article/10.1007/s10444-024-10174-z}{\color{blue}  \emph{Advances in Computational Mathematics} (2024).}
+	\item W. Xue, \textbf{H. Zhang}, A. Gopal, V. Rokhlin, O. Miller. ``Fullwave design of cm-scale cylindrical metasurfaces via fast direct solvers." \href{https://arxiv.org/abs/2308.08569}{\color{blue} \emph{Preprint} (2023)}.
+	\item{\textbf{H. Zhang}, Z. Kuang, S. Puri and O. Miller. ``Conservation-law-based global bounds to quantum optimal control." \href{https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.127.110506}{\color{blue} \emph{Physical Review Letters} (2021)}.}
+	\item{\textbf{H. Zhang}, O. Miller. ``Quasinormal coupled mode theory." \href{https://arxiv.org/abs/2010.08650}{\color{blue} \emph{Preprint} (2020)}.}
+	\item{\textbf{H. Zhang}, C.-W. Hsu, and O. Miller. ``Scattering concentration bounds: brightness theorems for waves." \href{https://doi.org/10.1364/OPTICA.6.001321}{\color{blue} \emph{Optica} (2019).}}
+	\item{Solutions manual to Quantum Mechanics by Julian Schwinger with Berthold-Georg Englert. (To appear.)}
+\end{enumerate}
+
+\section{\sc Talks}
+\begin{itemize}
+%	\item \emph{Measuring electromagnetic Green’s functions via correlation}, Modern Applied and Computational Analysis (2023)
+	\item \emph{Finding scattering resonances via generalized colleague matrices}, UMass Lowell Mathematics \& Statistics Colloquium (2024)
+	\item \emph{An efficient scheme for fullwave inverse design of large-scale metasurfaces}, SPIE (2022)
+	\item \emph{Conservation-law-based global bounds to quantum optimal control}, SUTD Mathematics and Technology Seminar (2021)
+	\item \emph{Brightness theorems for nanophotonics}, CLEO (2019)
+\end{itemize}
+
+\section{\sc Teaching}
+Yale University, Department of Mathematics
+
+\begin{itemize}
+\setlength\itemsep{0em}
+	\item Instructor -- MATH 325 Introduction to Functional Analysis, Sprint 2025
+	\item Instructor -- MATH 246 Ordinary Differential Equations, Fall 2024
+		\item Instructor -- MATH 222 Linear Algebra with Applications, Spring 2024
+	\item Instructor -- MATH 246 Ordinary Differential Equations, Fall 2023
+	\item Instructor -- MATH 222 Linear Algebra with Applications, Spring 2023
+	\item Instructor -- MATH 222 Linear Algebra with Applications, Fall 2022
+
+\end{itemize}
+Yale University, Department of Physics
+
+\begin{itemize}
+\setlength\itemsep{0em}
+	\item Teaching assistant -- PHYS 502 Electromagnetic Theory I, Spring 2019
+\end{itemize}
+
+
+
+
+\end{resume}
+\end{document}
