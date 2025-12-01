@@ -1,70 +1,218 @@
 <!DOCTYPE html>
-<html lang="en-us">
-  <head>
-	<meta name="generator" content="Hugo 0.129.0">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hanwen Zhang</title>
-    <link rel="stylesheet" href="https://han-wen-zhang.github.io/css/style.css" />
-    <link rel="stylesheet" href="https://han-wen-zhang.github.io/css/fonts.css" />
-    
-  </head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Hanwen Zhang</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Personal page of Hanwen Zhang" />
+  <link rel="stylesheet" href="style.css" />
+  <img src="./img/photo.png" alt="Photo of Hanwen Zhang" class="profile-photo" />
+</head>
 
-  <body>
 
-	<!--   <hr/> -->
+<body>
+  <main>
+	<nav class="top-nav">
+	  <a href="#about">About</a>
+	  <a href="#research">Research</a>
+	  <a href="#publications">Publications</a>
+	  <a href="#teaching">Teaching</a>
+	  <a href="#cv">CV</a>
+	  <a href="#contact">Contact</a>
+	</nav>
+	
+    <header>
+      <div class="name">Hanwen Zhang</div>
+	  <!--
+	  <div class="tagline"> 
+        Applied mathematics · numerical analysis · computational physics
+      </div>
+	  -->
+      <div class="meta">
+        Gibbs Assistant Professor, Yale University ·
+        <a href="mailto:hanwen.zhang@yale.edu">hanwen.zhang@yale.edu</a> ·
+        <a href="https://github.com/han-wen-zhang">GitHub</a> ·
+        <a href="https://scholar.google.com/citations?user=NZNyXZEAAAAJ&hl=en">Google Scholar</a> ·
+        <a href="cv.pdf">CV (PDF)</a>
+      </div>
+    </header>
 
-	<nav>
-    <ul class="menu">
-      <li><a href="https://han-wen-zhang.github.io/">Home</a></li>
+    <section id="about">
+      <h2>About</h2>
+      <p>
+I am a Gibbs Assistant Professor in the Department of Applied and Computational Mathematics at Yale University. My research focuses on fast algorithms for computational tasks in physics by applying techniques from modern applied mathematics. These techniques revolve around numerical methods for integral equations and analysis-based fast algorithms.
+      </p>
+      <p>
+Previously, I completed my PhD in Applied Physics at Yale and my advisor was Owen Miller. I received a BS in Physics and a BE in Material Science with the highest distinction from the National University of Singapore.
+      </p>
+    </section>
+
+
+	<!--******Projects, come back later******* --> 
+<!-- 
+    <section id="research">
+      <h2>Research</h2>
+      <ul>
+        <li>
+          <span class="pub-title">Fast solvers for large-scale wave physics</span><br />
+          <span class="small">
+            High-order integral-equation-based methods and fast direct solvers
+            for Helmholtz and Maxwell problems, with applications to integrated
+            photonics and metalens design.
+          </span>
+        </li>
+
+        <li>
+          <span class="pub-title">Analytic and geometric theory of Wannier functions</span><br />
+          <span class="small">
+            Constructive frameworks for globally optimal, exponentially localized
+            Wannier functions, emphasizing Berry geometry, Kato perturbation theory,
+            and gauge fixing on tori.
+          </span>
+        </li>
+      </ul>
+    </section>
+-->
+
+    <section id="publications">
+      <h2>Recent Publications</h2>
+      <ul>
+
+        <li>
+          <span class="pub-title">Constructing globally optimal Wannier functions for isolated composite bands in one dimension: Analysis </span><br />
+          <span class="pub-venue">Yale CS Technical Report, 2025</span>
+          <span class="small">
+            <a href="https://engineering.yale.edu/application/files/2817/6303/9480/TR1575.pdf">Report Link</a>
+          </span>
+        </li>
+
+
+		<li>
+          <span class="pub-title">A highly accurate procedure for computing globally optimal Wannier functions in one-dimensional crystalline insulators</span><br />
+          <span class="small">
+            with A. Gopal.
+          </span><br />
+          <span class="pub-venue">Advances in Computational Mathematics, 2025</span><br />
+          <span class="small">
+            <a href="https://arxiv.org/abs/2409.04369">arXiv</a>,
+            <a href="https://link.springer.com/article/10.1007/s10444-025-10266-4">
+			  Journal
+			</a>
+          </span>
+        </li>
+
+
+
+        <li>
+          <span class="pub-title">Constructing optimal Wannier functions via potential theory: isolated single band for matrix models</span><br />
+          <span class="pub-venue">Preprint, 2024</span>
+          <span class="small">
+            <a href="https://arxiv.org/abs/2502.08641">arXiv</a>
+          </span>
+        </li>
+
+
+
 	  <li>
-	  <object data="./filename.pdf" type="application/pdf" width="500px" height="600px">
-	   <a href="https://han-wen-zhang.github.io/cv/cv.pdf" target="_blank">
-	    CV
-	   </a>
-	  </object>
-	  </li>
-      <li><a href="https://han-wen-zhang.github.io/publications">Publications</a></li>
+          <span class="pub-title">Finding roots of complex analytic functions via generalized colleague matrices</span><br />
+          <span class="small">
+            with V. Rokhlin.
+          </span><br />
+          <span class="pub-venue">Advances in Computational Mathematics, 2024</span><br />
+          <span class="small">
+            <a href="https://arxiv.org/abs/2307.14494">arXiv</a>,
+            <a href="https://link.springer.com/article/10.1007/s10444-024-10174-z">
+			  Journal
+			</a>,
+            <a href="https://github.com/han-wen-zhang/complex_rootfinder">Code</a>
+          </span>
+        </li>
 
-    </ul>
-    </nav>
-	<hr>
+		<li>
+          <span class="pub-title">Fullwave design of cm-scale cylindrical metasurfaces via fast direct solvers</span><br />
+          <span class="small">
+            with W. Xue, A. Gopal, V. Rokhlin, O. Miller.
+          </span><br />
+          <span class="pub-venue">Preprint, 2023</span>
+          <span class="small">
+            <a href="https://arxiv.org/abs/2308.08569">arXiv</a>
+          </span>
+        </li>
 
-	<h1 style="text-align:center">Hanwen Zhang</h1>
+      <p class="small">
+        A complete list is available on <a href="https://scholar.google.com/citations?user=NZNyXZEAAAAJ&hl=en">Google Scholar</a>.
+      </p>
 
-	<div class="first-box">
-	  <br>
-	  <img  
-	  src="https://han-wen-zhang.github.io/img/photo.png" 
-	  style="max-width:93%;min-width:120px;float:left;margin-right:5%;border-radius:4%"
-	  />
-	</div>
+<!-- publication template
+        <li>
+          <span class="pub-title">[Title of a paper]</span><br />
+          <span class="small">
+            with Coauthor(s).
+          </span><br />
+          <span class="pub-venue">Journal / preprint, 2023</span><br />
+          <span class="small">
+            <a href="https://arxiv.org/">arXiv</a>,
+            <a href="https://arxiv.org/">Journal</a>,
+            <a href="https://arxiv.org/">Code</a>
+          </span>
+        </li>
+-->
 
-	<div class="second-box">
-	<p 
-	style="text-align:justify;"
-	> 
-	I am a Gibbs Assistant Professor in the Department of Applied and Computational Mathematics at Yale University. My research focuses on fast algorithms for computational tasks in physics by applying techniques from modern applied mathematics. 
-	These techniques revolve around numerical methods for integral equations and analysis-based fast algorithms.  
-	</p>
-	<p
-	style="text-align:justify;"
-	>
-	Previously, I completed my PhD in Applied Physics at Yale and my advisor was Owen Miller. I received a BS in Physics and a BE in Material Science with the highest distinction from the National University of Singapore.
-	</p>
+      </ul>
+    </section>
 
-	</div>
+    <section id="teaching">
+      <h2>Teaching</h2>
+      <ul>
 
-	<p>
-	<b>Email</b>: hanwen.zhang(at)yale.edu
-	</p>
+        <li>
+          <strong>MATH 325 – Functional Analysis</strong> (Yale University)<br />
+        </li>
 
-	<hr>
-	<p style="text-align: center;">
-	<a href="mailto:hanwen.zhang@yale.edu">Email</a> | <a href="https://github.com/han-wen-zhang">GitHub</a> | <a href="https://scholar.google.com/citations?user=NZNyXZEAAAAJ&hl=en">Scholar</a> | <a href="https://www.linkedin.com/in/hanwen-zhang-838a868b/">LinkedIn</a>  
-	</p>
+        <li>
+          <strong>MATH 246 – Ordinary Differential Equations</strong> (Yale University)<br />
+        </li>
 
-  </body>
+        <li>
+          <strong>MATH 222 – Linear Algebra</strong> (Yale University)<br />
+<!--
+          <span class="small">Undergraduate course with emphasis on computation and geometric intuition.</span>
+-->
+        </li>
 
+      </ul>
+    </section>
 
-  </html>
+    <section id="cv">
+      <h2>Curriculum Vitae</h2>
+      <div class="pill-list">
+        <a class="pill" href="cv.pdf">Download CV (PDF)</a>
+      </div>
+      <p class="small" style="margin-top:0.7rem;">
+        The CV contains a complete list of publications, teaching, talks, and professional activities.
+      </p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>
+        Email:
+        <a href="mailto:hanwen.zhang@yale.edu">hanwen.zhang@yale.edu</a>
+      </p>
+      <p class="small">
+        Code and related materials:
+        <a href="https://github.com/han-wen-zhang">GitHub</a>
+      </p>
+    </section>
+
+    <footer>
+      <span>&copy; <span id="year"></span> Hanwen Zhang.</span>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+

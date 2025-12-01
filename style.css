@@ -1,0 +1,209 @@
+/* ---- Base ---- */
+:root {
+  --bg: #f7f7f7;
+  --fg: #222222;
+  --muted: #666666;
+  --accent: #005f99;
+  --border: #dddddd;
+  --max-width: 760px;
+  --line-height: 1.6;
+  --font-sans: system-ui, -apple-system, BlinkMacSystemFont,
+               "Segoe UI", sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+               "Liberation Mono", "Courier New", monospace;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #111111;
+    --fg: #eeeeee;
+    --muted: #aaaaaa;
+    --accent: #4bb3ff;
+    --border: #333333;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-sans);
+  background: var(--bg);
+  color: var(--fg);
+  line-height: var(--line-height);
+  padding: 2.5rem 1.5rem 3rem;
+  -webkit-font-smoothing: antialiased;
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  width: 100%;
+  max-width: var(--max-width);
+}
+
+/* ---- Navigation---- */
+.top-nav {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.top-nav a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+.top-nav a:hover {
+  border-bottom: 1px solid var(--accent);
+}
+
+
+
+
+/* ---- Header ---- */
+header {
+  margin-bottom: 2.5rem;
+}
+
+.name {
+  font-size: 1.9rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.tagline {
+  color: var(--muted);
+  font-size: 0.98rem;
+  margin-bottom: 0.75rem;
+}
+
+.meta {
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.meta a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.meta a:hover {
+  text-decoration: underline;
+}
+
+/* ---- Profile Photo (Option A: Circular Avatar) ---- */
+.profile-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+
+  float: left;          /* key */
+  margin-right: 1.5rem; /* horizontal spacing */
+  margin-bottom: 1rem;  /* vertical spacing below */
+  margin-top: 0.5rem;   /* optional small space above */
+
+  border: 2px solid var(--border);
+}
+
+/* ---- Sections ---- */
+section {
+  margin-bottom: 2rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--border);
+}
+
+section h2 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  margin-bottom: 0.75rem;
+  color: var(--muted);
+}
+
+p {
+  margin-bottom: 0.5rem;
+  font-size: 0.98rem;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  margin-bottom: 0.45rem;
+  font-size: 0.95rem;
+}
+
+/* ---- Links ---- */
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ---- Pills ---- */
+.pill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.pill {
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0.12rem 0.65rem;
+  font-size: 0.78rem;
+  color: var(--muted);
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.pill:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* ---- Publications ---- */
+.pub-title {
+  font-weight: 500;
+}
+
+.pub-venue {
+  font-style: italic;
+  color: var(--muted);
+}
+
+.small {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+/* ---- Footer ---- */
+footer {
+  margin-top: 2.5rem;
+  border-top: 1px solid var(--border);
+  padding-top: 0.75rem;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+/* ---- Responsive ---- */
+@media (min-width: 880px) {
+  body {
+    padding-top: 4rem;
+  }
+}
+
