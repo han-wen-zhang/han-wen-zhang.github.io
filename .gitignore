@@ -2,3 +2,10 @@
 ._.DS_Store
 **/.DS_Store
 **/._.DS_Store
+
+# LaTeX build artifacts (cv/cv.pdf is a build product; the served copy is ./cv.pdf)
+cv/*.aux
+cv/*.log
+cv/*.out
+cv/*.pdf
+cv/*.synctex.gz
